@@ -1,5 +1,0 @@
-Path to vertex 1: -
-Path to vertex 2: 1 and distance 4
-Path to vertex 3: 1 and distance 3
-Path to vertex 4: 1, 2 and distance 5
-Path to vertex 5: 1, 2, 4 and distance 7

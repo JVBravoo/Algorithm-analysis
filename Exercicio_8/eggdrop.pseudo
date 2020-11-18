@@ -1,0 +1,23 @@
+# n = Ovos
+# k = andares
+
+CRIA um array numdrops[n][k]
+
+PARA CADA i de 1 até n:
+    numdrops[i][0] = 0
+    numdrops[i][1] = 1
+
+PARA CADA i de 1 até k:
+    numdrops[1][i] = i
+
+PARA CADA i de 2 até n:
+    PARA CADA j de 2 até k:
+        numdrops[i][j] = infinito
+        minimo = infinito
+        PARA CADA x de 1 até j:
+            minimo = menor valor entre (
+                minimo,
+                1 + valor maximo entre (numdrops[i - 1][x - 1], numdrops[i][j - x])
+            )
+        numdrops[i][j] = minimo
+RETORNA numdrops[n][k]
